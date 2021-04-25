@@ -1,6 +1,11 @@
 let enabled = true
 let selectedResolution = '2160p'
 
+window.onload = () => {
+  document.querySelector('#onOffButton').onclick = onOffClicked
+  document.querySelector('#resolutionList').onchange = resolutionChanged
+}
+
 const onOffClicked = () => {
   var button = document.querySelector('#onOffButton')
   

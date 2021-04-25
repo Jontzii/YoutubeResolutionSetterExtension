@@ -2,7 +2,6 @@
   "manifest_version": 2,
   "name": "Youtube Resolution Setter",
   "version": "0.1",
-  "default_locale": "en",
   "description": "Sets resolution of a Youtube video to highest available.",
   "author": "Joonas Hiltunen",
   "browser_action": {
@@ -10,7 +9,7 @@
     "default_popup": "popup.html"
   },
   "content_scripts": [{
-    "matches": ["https://youtube.com"],
+    "matches": ["https://*.youtube.com/watch*"],
     "js": ["resolutionChanger.js", "popup.js"]
   }],
   "permissions": [
