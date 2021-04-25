@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube resolution setter</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body style="text-align: center;">
+    <h1>Select resolution</h1>
+    <select id="resolutionList" class="form-select" aria-label="Default select" onchange="resolutionChanged()">
+      <option value="2160p" selected>4k</option>
+      <option value="1440p">1440p</option>
+      <option value="1080p">1080p</option>
+      <option value="720p">720p</option>
+    </select>
+    <br><br>
+    <button id="onOffButton" class="btn btn-success" onclick="onOffClicked()">Enabled</button>
+  </body>
+</html>
